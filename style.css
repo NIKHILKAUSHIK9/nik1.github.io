@@ -1,0 +1,297 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(mainbg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1px 8%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 0px;
+}
+
+.logo {
+  height: 100px;
+  cursor: pointer;
+}
+
+nav button {
+  border: 0px solid transparent;
+  background: #db0001;
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 20px;
+  font-size: 14px;
+  font-weight: 650;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#opt {
+  padding: 1px 10px;
+  height: 28px;
+  width: 100px;
+  border: 2px solid rgba(128, 128, 128, 0.405);
+  border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.246);
+  font-size: 1rem;
+  color: white;
+}
+
+#opt1 {
+  background-color: #fff;
+  color: black;
+}
+#opt2 {
+  background-color: #fff;
+  color: black;
+}
+
+.header-content{
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.header-content h1{
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 59px;
+  max-width: 650px;
+}
+
+.header-content h3{
+  line-height: 65px;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.header-content p{
+  font-size: 1.2rem;
+}
+.email-signup{
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.email-signup input{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.email-signup button{
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 28px;
+}
+
+.separation1{
+  height: 8px;
+  width: 98.7vw;
+  background-color: white;
+
+}
+
+/* main content */
+
+.features{
+  padding: 50px 12%;
+  font-size: 22px;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.text-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col img{
+   display: block;
+   width: 90%;
+   margin: auto;
+}
+
+.img-col #videofir{
+  height: 402px;
+  width: 325px;
+  position: absolute;
+  top: 110%;
+  left: 56.8%;
+  z-index: 2;
+}
+
+.features h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.img-col .videosec{
+  height: 230px;
+  width: 280px;
+  position: relative;
+  left: 22%;
+  bottom: 343px;
+  z-index: -1;
+}
+
+.separation2{
+  height: 8px;
+  width: 220vh;
+  background-color: #fff;
+}
+
+.faq{
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18 px;
+}
+
+.faq h2{
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.accordion{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.accordion li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030 ;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after{
+  content: '+';
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.accordion .content{
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s ;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+  transform: rotate(135deg);
+}
+
+.faq .email-signup{
+  max-width: 600px;
+  margin: 20px auto 60px;
+}
+
+.faq small{
+  font-size: 13px;
+}
+ 
+/* footer  */
+
+.footer{
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+}
+
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer .col{
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.footer .col a{
+  display: block ;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10pxn ;
+  line-height: 25px;
+}
+
+.copyrgt{
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
